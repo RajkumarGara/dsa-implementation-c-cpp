@@ -1,6 +1,10 @@
 # dsa-implementation-c-cpp
 A clean collection of data structures and algorithms implemented from scratch in C and C++
 
+## C Concepts Cheatsheets
+
+The [c-concepts/](c-concepts/) folder contains markdown reference docs covering tricky C/C++ topics for embedded software interview prep and day-to-day work — pointers, const/volatile, operator precedence, undefined behavior, memory layout, bitwise operations, and more.
+
 ## Build
 
 Run all commands from the repository root:
