@@ -74,6 +74,17 @@ char *b = "hello";
 
 ---
 
+## Losing a Pointer to a String Literal is NOT a Memory Leak
+
+```c
+char *s = "hello";
+s = "world";  // "hello" is still in .rodata — no memory leaked
+```
+
+String literals live in `.rodata`, not the heap. They are freed automatically when the program exits — there is nothing to `free`.
+
+---
+
 ## Common String Pitfalls
 
 ### Missing null terminator
