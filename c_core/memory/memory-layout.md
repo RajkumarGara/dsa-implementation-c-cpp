@@ -164,7 +164,7 @@ struct example {
 // sizeof(struct example) = 12, not 6! (padding for alignment)
 ```
 
-See [structs-and-unions.md](structs-and-unions.md) for details.
+See [structs-and-unions.md](../structs_unions/structs-and-unions.md) for details.
 
 ### Empty struct
 

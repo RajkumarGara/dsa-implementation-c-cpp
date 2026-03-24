@@ -161,7 +161,7 @@ char *s = "hello";
 s[0] = 'H';  // UB — string literals are in read-only memory
 ```
 
-See [strings-and-literals.md](strings-and-literals.md) for details.
+See [strings-and-literals.md](../notes/strings-and-literals.md) for details.
 
 ### Violating strict aliasing
 
