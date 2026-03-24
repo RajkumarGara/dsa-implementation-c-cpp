@@ -19,7 +19,7 @@ void append(struct array *arr, int element)
 
 void insert(struct array *arr, int index, int element)
 {
-	if(index>0 && index<arr->length)
+	if(index>=0 && index<=arr->length && arr->length < arr->size)
 	{
 		for(int i=arr->length; i>index; i--)
 		{
@@ -48,16 +48,13 @@ int Delete(struct array *arr, int index)
 
 int LinearSearch(struct array arr, int key)
 {
-	if(key>=0 && key<arr.length)
+	for(int i=0; i<arr.length; i++)
 	{
-		for(int i=0; i<arr.length; i++)
+		if(arr.a[i] == key)
 		{
-			if(arr.a[i] == key)
-			{
-				if(i>0)	//key is already in index 0; no need to perform transposition
-					swap(&arr.a[i], &arr.a[i-1]);
-				return i;
-			}
+			if(i>0)	//key is already in index 0; no need to perform transposition
+				swap(&arr.a[i], &arr.a[i-1]);
+			return i;
 		}
 	}
 	return -1;
