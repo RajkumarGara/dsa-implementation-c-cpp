@@ -9,28 +9,28 @@
 ```
 High Address
 ┌─────────────────────┐
-│    Command-line      │
-│    args & env vars   │
+│    Command-line     │
+│    args & env vars  │
 ├─────────────────────┤
-│       Stack          │  ↓ grows downward
-│  (local variables,   │
-│   return addresses,  │
-│   function params)   │
+│       Stack         │  ↓ grows downward
+│  (local variables,  │
+│   return addresses, │
+│   function params)  │
 ├── ── ── ── ── ── ── ┤
-│                      │
-│    (free space)      │
-│                      │
+│                     │
+│    (free space)     │
+│                     │
 ├── ── ── ── ── ── ── ┤
-│       Heap           │  ↑ grows upward
-│  (malloc, calloc)    │
+│       Heap          │  ↑ grows upward
+│  (malloc, calloc)   │
 ├─────────────────────┤
-│       BSS            │  Uninitialized globals/statics (zero-filled)
+│       BSS           │  Uninitialized globals/statics (zero-filled)
 ├─────────────────────┤
-│       Data           │  Initialized globals/statics
+│       Data          │  Initialized globals/statics
 ├─────────────────────┤
-│       Text (Code)    │  Machine instructions (read-only)
+│       Text (Code)   │  Machine instructions (read-only)
 ├─────────────────────┤
-│    (Reserved/NULL)   │
+│    (Reserved/NULL)  │
 └─────────────────────┘
 Low Address
 ```
