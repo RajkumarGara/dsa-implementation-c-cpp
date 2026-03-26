@@ -1,18 +1,18 @@
 # Type Conversion & Undefined Behavior Traps
 
-> For type conversion fundamentals, see [type-casting.md](../../c_core/notes/type-casting.md). For undefined behavior concepts, see [undefined-behavior.md](../../c_core/undefined_behavior/undefined-behavior.md). This file focuses on **tricky interview output questions** that test these concepts.
+> For type conversion fundamentals, see [type-casting.md](../../c_core/type-casting.md). For undefined behavior concepts, see [undefined-behavior.md](../../c_core/undefined-behavior.md). This file focuses on **tricky interview output questions** that test these concepts.
 
 ---
 
 ## Implicit Type Conversions
 
-> See [type-casting.md](../../c_core/notes/type-casting.md) for signed/unsigned rules, integer promotion, and conversion rank.
+> See [type-casting.md](../../c_core/type-casting.md) for signed/unsigned rules, integer promotion, and conversion rank.
 
 ### Question 1: Signed vs unsigned comparison — quick check
 
 `int a = -1; unsigned int b = 1; if (a < b)` — which branch executes?
 
-**Answer:** `else` branch. `-1` is converted to `UINT_MAX` (4294967295). See [type-casting.md](../../c_core/notes/type-casting.md) for full explanation.
+**Answer:** `else` branch. `-1` is converted to `UINT_MAX` (4294967295). See [type-casting.md](../../c_core/type-casting.md) for full explanation.
 
 ### Question 2: Integer promotion in assignment
 
@@ -46,7 +46,7 @@ for (size_t i = 11; i-- > 0; ) { ... }
 
 ## Undefined Behavior Classics
 
-> See [undefined-behavior.md](../../c_core/undefined_behavior/undefined-behavior.md) for the full UB catalog. See [strings-and-literals.md](../../c_core/notes/strings-and-literals.md) for string literal rules.
+> See [undefined-behavior.md](../../c_core/undefined-behavior.md) for the full UB catalog. See [strings-and-literals.md](../../c_core/strings-and-literals.md) for string literal rules.
 
 ### Question 4: Accessing uninitialized variables
 
@@ -176,11 +176,11 @@ struct Point p = {.z = 3, .x = 1};
 
 | Trap | What goes wrong | Prevention |
 |---|---|---|
-| Signed/unsigned comparison | `-1 > 1U` is true | Enable `-Wsign-compare` — see [type-casting.md](../../c_core/notes/type-casting.md) |
+| Signed/unsigned comparison | `-1 > 1U` is true | Enable `-Wsign-compare` — see [type-casting.md](../../c_core/type-casting.md) |
 | Integer promotion | `uint8_t + uint8_t` is `int` | Be aware of widening in expressions |
 | Unsigned underflow | `5U - 10U` wraps to huge value | Check before subtracting |
 | `size_t` loop decrement | `i >= 0` always true | Use `i-- > 0` or signed counter |
-| String literal modification | Crash or silent corruption | Use `char[]` — see [strings-and-literals.md](../../c_core/notes/strings-and-literals.md) |
+| String literal modification | Crash or silent corruption | Use `char[]` — see [strings-and-literals.md](../../c_core/strings-and-literals.md) |
 | Missing volatile | Compiler optimizes out reads | Use volatile for ISR/HW variables |
 | Clear-on-read registers | Double read loses data | Read volatile once into local |
 | sizeof with side effects | Side effects never execute | sizeof is compile-time |
