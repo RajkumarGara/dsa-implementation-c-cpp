@@ -1,6 +1,6 @@
 # Pointer Puzzles
 
-> For pointer fundamentals (arithmetic, double pointers, void pointers), see [pointers.md](../../c_core/pointers/pointers.md). For function pointer patterns, see [function-pointers.md](../../c_core/pointers/function-pointers.md). This file focuses on **tricky interview questions** that go beyond the concept explanations.
+> For pointer fundamentals (arithmetic, double pointers, void pointers), see [pointers.md](../../c_core/pointers.md). For function pointer patterns, see [function-pointers.md](../../c_core/function-pointers.md). This file focuses on **tricky interview questions** that go beyond the concept explanations.
 
 ---
 
@@ -56,7 +56,7 @@ printf("%ld\n", (char *)p2 - (char *)p1);
 
 ## Array Decay and sizeof
 
-> See [pointers.md — Array Name vs Pointer](../../c_core/pointers/pointers.md) for the concept explanation.
+> See [pointers.md — Array Name vs Pointer](../../c_core/pointers.md) for the concept explanation.
 
 ### Question 4: Quick check
 
@@ -105,7 +105,7 @@ printf("%d\n", p[1][2]);     // same as arr[1][2]
 
 ## Dangling, Wild, and NULL Pointers
 
-> See [pointers.md — Dangling Pointer](../../c_core/pointers/pointers.md) for the concept explanation.
+> See [pointers.md — Dangling Pointer](../../c_core/pointers.md) for the concept explanation.
 
 ### Question 8: Spot the dangling pointer
 

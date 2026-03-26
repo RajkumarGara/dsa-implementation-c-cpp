@@ -1,12 +1,12 @@
 # Struct, Union, and Memory Layout Tricks
 
-> For struct/union fundamentals (padding, packing, unions, bit fields), see [structs-and-unions.md](../../c_core/structs_unions/structs-and-unions.md). This file focuses on **tricky interview questions** that go beyond the concept explanations.
+> For struct/union fundamentals (padding, packing, unions, bit fields), see [structs-and-unions.md](../../c_core/structs-and-unions.md). This file focuses on **tricky interview questions** that go beyond the concept explanations.
 
 ---
 
 ## Struct Padding and Alignment
 
-> See [structs-and-unions.md](../../c_core/structs_unions/structs-and-unions.md) for padding rules and visualizations.
+> See [structs-and-unions.md](../../c_core/structs-and-unions.md) for padding rules and visualizations.
 
 ### Question 1: What is sizeof this struct?
 
@@ -47,7 +47,7 @@ struct E {
 
 ## Unions
 
-> See [structs-and-unions.md — Unions](../../c_core/structs_unions/structs-and-unions.md) for union basics and type punning.
+> See [structs-and-unions.md — Unions](../../c_core/structs-and-unions.md) for union basics and type punning.
 
 ### Question 4: Union with bit fields
 

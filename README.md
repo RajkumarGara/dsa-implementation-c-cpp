@@ -2,11 +2,13 @@
 
 Comprehensive embedded systems interview preparation — C core concepts, data structures & algorithms, operating systems, embedded drivers, system design, and more.
 
+The `c_core/` section now keeps its reference docs directly in one folder for faster browsing, including C fundamentals plus focused C++ interview notes.
+
 ## Repository Structure
 
 ```
 embedded-systems-prep/
-├── c_core/                     # C language fundamentals (pointers, structs, bitwise, macros, UB)
+├── c_core/                     # Flat reference docs for C fundamentals and C++ concepts/OOP
 ├── data_structures_algorithms/ # DSA implementations in C
 ├── operating_systems/          # Processes, threads, synchronization, scheduling
 ├── embedded_drivers/           # UART, I2C, SPI, CAN, GPIO, ADC, PWM, timers, interrupts

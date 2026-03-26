@@ -210,7 +210,7 @@ printf("%d\n", 2[p]);      // 30 — same as *(2 + p)
 
 **Q: Difference between `char *s` and `char s[]`?**
 
-See [strings-and-literals.md](../notes/strings-and-literals.md).
+See [strings-and-literals.md](strings-and-literals.md).
 
 **Q: Can you do arithmetic on a `void *`?**
 
