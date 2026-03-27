@@ -2,6 +2,8 @@
 
 > Understanding memory layout is fundamental for embedded developers — you need to know where every byte lives, how much space it takes, and how the hardware sees it.
 
+This file explains memory from the C program and runtime-segment perspective. For the MCU hardware address-space view, see [memory-map.md](../embedded_concepts/memory-map.md).
+
 ---
 
 ## Program Memory Segments

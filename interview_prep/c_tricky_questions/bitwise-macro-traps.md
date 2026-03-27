@@ -2,7 +2,7 @@
 
 > Bitwise operations and macros are fertile ground for interview trick questions. A single missing parenthesis or unsigned/signed mismatch can silently break embedded firmware.
 
-> For macro fundamentals (parenthesization, `do/while(0)`, stringification, token pasting), see [preprocessor.md](../../c_core/preprocessor.md). For bit manipulation basics (set/clear/toggle, power-of-2, popcount), see [bitwise-operations.md](../../c_core/bitwise-operations.md). This file focuses on **tricky interview gotchas** that go beyond the concept explanations.
+> For macro fundamentals (parenthesization, `do/while(0)`, stringification, token pasting), see [preprocessor.md](../../c_core/preprocessor.md). For bit manipulation basics (set/clear/toggle, power-of-2, popcount), see [bitwise-operations.md](../../c_core/bitwise-operations.md). This file focuses on **tricky interview pitfalls** that go beyond the concept explanations.
 
 ---
 

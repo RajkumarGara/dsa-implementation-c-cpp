@@ -12,7 +12,7 @@ embedded-systems-prep/
 ├── data_structures_algorithms/ # DSA implementations in C
 ├── operating_systems/          # Processes, threads, synchronization, scheduling
 ├── embedded_drivers/           # UART, I2C, SPI, CAN, GPIO, ADC, PWM, timers, interrupts
-├── embedded_concepts/          # Memory-mapped I/O, registers, volatile/const, linker scripts
+├── embedded_concepts/          # Boot flow, memory maps, registers, endianness, volatile/const, linker scripts
 ├── interview_prep/             # Tricky C questions, MCQs, debugging cases
 └── README.md
 ```

@@ -25,6 +25,8 @@ int *p = &obj.i;  // What's the risk?
 
 **Answer:** `sizeof` = 6, but `p` points to an unaligned address. Dereferencing causes a **HardFault on ARM Cortex-M0/M0+**. Use packed only for wire protocols.
 
+See [embedded-specific.md — Pragma Pack & Alignment](../../embedded_concepts/embedded-specific.md) for the day-to-day pattern version of this topic.
+
 ### Question 3: Struct tail padding
 
 ```c
