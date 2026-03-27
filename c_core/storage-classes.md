@@ -1,6 +1,6 @@
 # Storage Classes
 
-> Storage classes control **lifetime**, **scope**, and **linkage** of variables. Interview favorites: `static` inside functions, `extern` across files, and the difference between scope and lifetime.
+> Storage classes control **lifetime**, **scope**, and **linkage** of variables. `static` inside functions, `extern` across files, and the difference between scope and lifetime are especially important.
 
 ---
 

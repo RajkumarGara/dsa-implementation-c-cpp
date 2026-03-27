@@ -1,6 +1,6 @@
 # Embedded Patterns And Pitfalls
 
-> Quick-reference patterns that are useful in real firmware work but should not replace the dedicated core concept docs.
+> Quick-reference patterns that are useful alongside the dedicated core concept docs.
 
 Use the dedicated topic docs for foundations: [memory-map.md](memory-map.md), [registers.md](registers.md), [const-volatile.md](const-volatile.md), [boot-process.md](boot-process.md), [linker-scripts.md](linker-scripts.md), [interrupts.md](interrupts.md), [dma.md](dma.md), and [low-power.md](low-power.md).
 
@@ -46,7 +46,7 @@ void watchdog_feed(void) {
 }
 ```
 
-Pattern: initialize once, then feed it from a healthy main loop or monitored task path. For interview-style explanation and reset-debug context, see [embedded-systems-mcqs.md](../interview_prep/mcqs/embedded-systems-mcqs.md) and [peripheral-timing-bugs.md](../interview_prep/debugging_cases/peripheral-timing-bugs.md).
+Pattern: initialize once, then feed it from a healthy main loop or monitored task path. For reset-debug context, see [embedded-systems-mcqs.md](../interview_prep/mcqs/embedded-systems-mcqs.md) and [peripheral-timing-bugs.md](../interview_prep/debugging_cases/peripheral-timing-bugs.md).
 
 ---
 
@@ -97,7 +97,7 @@ typedef struct {
 // sizeof(packet_t) = 7, not 8 or 12
 ```
 
-Use this only when a binary layout must match exactly. For the interview-focused packed-struct failure case, see [struct-union-memory-tricks.md](../interview_prep/c_tricky_questions/struct-union-memory-tricks.md).
+Use this only when a binary layout must match exactly. For the packed-struct failure case, see [struct-union-memory-tricks.md](../interview_prep/c_tricky_questions/struct-union-memory-tricks.md).
 
 ---
 

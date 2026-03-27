@@ -149,7 +149,7 @@ The order matters. For example, switching to a faster clock without proper Flash
 
 ## UART And Clock Accuracy
 
-UART is a classic interview example.
+UART is a classic example.
 
 If the peripheral clock is wrong, the baud rate is wrong.
 
@@ -207,7 +207,7 @@ Low-power bugs are often really clock restoration bugs.
 
 ---
 
-## Interview Questions
+## Common Questions
 
 **Q: Why do you need to enable a peripheral clock before using a peripheral?**
 
@@ -217,7 +217,7 @@ Because the peripheral logic is often held unclocked to save power, so register 
 
 Because the baud divisor depends on the actual peripheral clock, which may differ from the assumed one.
 
-**Q: Why are clock tree questions important in embedded interviews?**
+**Q: Why are clock tree details important in embedded work?**
 
 Because they connect software configuration directly to timing correctness, power, and bring-up reliability.
 

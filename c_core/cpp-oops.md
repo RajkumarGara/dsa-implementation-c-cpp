@@ -1,6 +1,6 @@
 # C++ OOP
 
-> C++ keeps object-oriented features close to the machine. For embedded interviews, you need to understand both the language model and the runtime cost of each feature.
+> C++ keeps object-oriented features close to the machine. In embedded work, you need to understand both the language model and the runtime cost of each feature.
 
 ---
 
@@ -126,7 +126,7 @@ public:
 - `protected`: public and protected base members become protected
 - `private`: public and protected base members become private
 
-For interviews, prefer `public` inheritance only when the derived type is truly a kind of the base type.
+Prefer `public` inheritance only when the derived type is truly a kind of the base type.
 
 ---
 
@@ -353,7 +353,7 @@ Composition is usually easier to test and maintain.
 
 ---
 
-## Common Interview Questions
+## Common Questions
 
 **Q: Why use a class instead of a struct?**
 

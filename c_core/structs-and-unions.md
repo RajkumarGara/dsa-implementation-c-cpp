@@ -1,6 +1,6 @@
 # Structs & Unions
 
-> Struct padding, alignment, and `memcmp` pitfalls are top interview topics. Union tricks are bread-and-butter in embedded firmware.
+> Struct padding, alignment, and `memcmp` pitfalls matter constantly in embedded firmware. Union tricks are also common in low-level code.
 
 ---
 

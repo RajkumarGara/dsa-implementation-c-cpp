@@ -133,7 +133,7 @@ Always read the protocol spec and convert explicitly.
 
 ---
 
-## Common Interview Traps
+## Common Traps
 
 ### Byte pointer inspection
 
@@ -180,7 +180,7 @@ Good checks:
 
 ---
 
-## Interview Questions
+## Common Questions
 
 **Q: Is endianness about bit order or byte order?**
 

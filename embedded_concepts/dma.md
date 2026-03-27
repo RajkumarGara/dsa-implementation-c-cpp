@@ -165,7 +165,7 @@ Mitigations depend on platform:
 - place DMA buffers in non-cacheable memory
 - align buffers to cache-line boundaries when required
 
-This is an advanced but very practical day-to-day firmware issue.
+This is an advanced but very practical firmware issue.
 
 ---
 
@@ -200,7 +200,7 @@ The memory map matters directly here.
 - lowest per-byte CPU load
 - highest setup and synchronization complexity
 
-This comparison is a standard interview topic.
+This comparison is a standard design tradeoff.
 
 ---
 
@@ -217,7 +217,7 @@ This comparison is a standard interview topic.
 
 ---
 
-## Interview Questions
+## Common Questions
 
 **Q: Why use DMA instead of interrupts?**
 

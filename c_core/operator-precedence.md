@@ -1,6 +1,6 @@
 # Operator Precedence & Associativity
 
-> Getting precedence wrong causes subtle bugs that compile cleanly. These patterns show up constantly in embedded C interviews.
+> Getting precedence wrong causes subtle bugs that compile cleanly. These patterns show up constantly in embedded C code.
 
 ---
 

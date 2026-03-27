@@ -1,6 +1,6 @@
 # C Core — Embedded Developer Cheatsheets
 
-Quick-reference markdown docs covering tricky C/C++ concepts, pitfalls, and patterns for **embedded software** interview prep and day-to-day work.
+Quick-reference markdown docs covering tricky C/C++ concepts, pitfalls, and patterns for embedded software.
 
 ## Topics
 
@@ -17,7 +17,7 @@ Quick-reference markdown docs covering tricky C/C++ concepts, pitfalls, and patt
 | 9 | [storage-classes.md](storage-classes.md) | `static`, `extern`, `register`, `auto`, linkage rules, scope vs lifetime |
 | 10 | [strings-and-literals.md](strings-and-literals.md) | String literals in read-only memory, `char[]` vs `char*`, common pitfalls |
 | 11 | [type-casting.md](type-casting.md) | Implicit conversions, integer promotion, signed/unsigned pitfalls, pointer casts |
-| 12 | [cpp-oops.md](cpp-oops.md) | Classes, inheritance, polymorphism, abstraction, encapsulation, and interview-style C++ OOP examples |
+| 12 | [cpp-oops.md](cpp-oops.md) | Classes, inheritance, polymorphism, abstraction, encapsulation, and C++ OOP examples |
 | 13 | [cpp-concepts.md](cpp-concepts.md) | RAII, references, templates, STL, smart pointers, move semantics, exceptions, and other C++-specific concepts |
 
 ### See also

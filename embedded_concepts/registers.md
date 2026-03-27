@@ -232,7 +232,7 @@ If `SR` is not volatile or if TXE is clear-on-read in some design, the code must
 
 ---
 
-## Interview Questions
+## Common Questions
 
 **Q: Why are reserved bits important?**
 

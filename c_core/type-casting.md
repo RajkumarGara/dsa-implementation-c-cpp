@@ -236,7 +236,7 @@ void *ptr2 = (void *)addr;          // integer → pointer
 
 ---
 
-## Common Interview Questions
+## Common Questions
 
 **Q: What's the output?**
 

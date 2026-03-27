@@ -235,7 +235,7 @@ These are the first places to check when memory usage or startup behavior looks 
 
 ---
 
-## Interview Questions
+## Common Questions
 
 **Q: Why is `.data` placed in RAM `AT > FLASH`?**
 

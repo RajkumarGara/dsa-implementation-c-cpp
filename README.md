@@ -1,8 +1,8 @@
 # embedded-systems-prep
 
-Comprehensive embedded systems interview preparation — C core concepts, data structures & algorithms, operating systems, embedded drivers, system design, and more.
+Comprehensive embedded systems preparation — C core concepts, data structures & algorithms, operating systems, embedded drivers, system design, and more.
 
-The `c_core/` section now keeps its reference docs directly in one folder for faster browsing, including C fundamentals plus focused C++ interview notes.
+The `c_core/` section now keeps its reference docs directly in one folder for faster browsing, including C fundamentals plus focused C++ notes.
 
 ## Repository Structure
 

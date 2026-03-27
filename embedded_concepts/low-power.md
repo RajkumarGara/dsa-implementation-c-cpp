@@ -158,7 +158,7 @@ An interrupt-driven wait or event-driven sleep usually saves much more power, es
 
 ---
 
-## Interview Questions
+## Common Questions
 
 **Q: Why not always use the deepest power mode?**
 

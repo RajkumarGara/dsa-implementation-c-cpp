@@ -1,6 +1,6 @@
 # Embedded Concepts
 
-Core embedded systems notes for interview prep first, with enough depth to stay useful later in day-to-day firmware work.
+Core embedded systems notes with enough depth for both study and practical reference.
 
 ## Foundations
 

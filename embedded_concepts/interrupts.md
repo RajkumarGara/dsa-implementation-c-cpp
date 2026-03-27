@@ -91,7 +91,7 @@ Important distinctions:
 - some bits are implemented, some are ignored
 - preemption priority and subpriority may be split by configuration
 
-Interview trap: never answer this as a generic rule without tying it to the MCU architecture.
+Avoid treating this as a generic rule without tying it to the MCU architecture.
 
 ### Priority mistakes that cause real bugs
 
@@ -100,7 +100,7 @@ Interview trap: never answer this as a generic rule without tying it to the MCU 
 - assuming all priority bits are implemented when the MCU only honors a subset
 - confusing subpriority ordering with true preemption capability
 
-Good interview framing: priority is a system design decision, not just a register setting.
+Priority is a system design decision, not just a register setting.
 
 ---
 
@@ -119,7 +119,7 @@ Example:
 - when interrupts are unmasked, it may then run
 - once entered, it is active
 
-This distinction shows up often in interview questions and debugging.
+This distinction shows up often in debugging.
 
 ---
 
@@ -262,7 +262,7 @@ Good when:
 - response time matters
 - multiple peripherals must coexist efficiently
 
-Interview answer should always include tradeoffs, not just “interrupts are better”.
+The explanation should include tradeoffs, not just “interrupts are better”.
 
 ---
 
@@ -322,7 +322,7 @@ Typical rule of thumb:
 - multiword objects are not
 - read-modify-write operations are not atomic without protection
 
-In interviews, avoid absolute statements like “32-bit access is always atomic”.
+Avoid absolute statements like “32-bit access is always atomic”.
 
 ---
 
@@ -354,7 +354,7 @@ A GPIO pulse on a scope is one of the fastest ways to measure ISR duration and j
 
 ---
 
-## Interview Questions
+## Common Questions
 
 **Q: What is the difference between pending and active?**
 

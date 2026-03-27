@@ -1,6 +1,6 @@
 # C++ Concepts Beyond C
 
-> C++ is not just "C with classes". Interviews often target the parts of the language that solve ownership, generic programming, and safer abstraction problems that plain C leaves to discipline.
+> C++ is not just "C with classes". Many of its key features solve ownership, generic programming, and safer abstraction problems that plain C leaves to discipline.
 
 ---
 
@@ -348,7 +348,7 @@ double scaled = static_cast<double>(value);
 
 ---
 
-## Differences from C That Matter in Interviews
+## Differences from C That Matter Most
 
 | Topic | C | C++ |
 |---|---|---|
@@ -370,7 +370,7 @@ double scaled = static_cast<double>(value);
 
 ---
 
-## Common Interview Questions
+## Common Questions
 
 **Q: What problem does RAII solve?**
 

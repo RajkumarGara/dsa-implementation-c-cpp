@@ -208,7 +208,7 @@ This is why some embedded projects restrict or carefully control global objects 
 
 ---
 
-## Interview Questions
+## Common Questions
 
 **Q: Why does execution not start at `main()`?**
 

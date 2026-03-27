@@ -195,7 +195,7 @@ See [function-pointers.md](function-pointers.md) for detailed coverage.
 
 ---
 
-## Common Interview Questions
+## Common Questions
 
 **Q: What is the output?**
 

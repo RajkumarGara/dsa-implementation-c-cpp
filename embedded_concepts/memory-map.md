@@ -217,7 +217,7 @@ The first question is often not "what line failed" but "what region is this addr
 
 ---
 
-## Interview Questions
+## Common Questions
 
 **Q: Why are peripheral registers part of the memory map?**
 

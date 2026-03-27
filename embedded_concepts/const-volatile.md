@@ -153,7 +153,7 @@ void copy(int * restrict dest, const int * restrict src, int n) {
 
 ---
 
-## Common Interview Questions
+## Common Questions
 
 **Q: What's the difference between `const int *p` and `int * const p`?**
 

@@ -1,6 +1,6 @@
 # Undefined Behavior (UB)
 
-> Undefined behavior means the C standard imposes **no requirements** — anything can happen. The compiler can assume UB never occurs and optimize accordingly. These are favorite interview trick questions.
+> Undefined behavior means the C standard imposes **no requirements** — anything can happen. The compiler can assume UB never occurs and optimize accordingly.
 
 ---
 
