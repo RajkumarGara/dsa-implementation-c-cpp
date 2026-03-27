@@ -24,5 +24,6 @@ Quick-reference markdown docs covering tricky C/C++ concepts, pitfalls, and patt
 
 | # | File | What's Inside |
 |---|------|---------------|
-| 14 | [const-volatile.md](../embedded_concepts/volatile_const/const-volatile.md) | `const` / `volatile` / `restrict` qualifiers, const-correctness patterns |
-| 15 | [embedded-specific.md](../embedded_concepts/notes/embedded-specific.md) | Memory-mapped I/O, ISR best practices, `volatile` usage, `#pragma pack`, linker scripts |
+| 14 | [const-volatile.md](../embedded_concepts/const-volatile.md) | `const` / `volatile` / `restrict` qualifiers, const-correctness patterns |
+| 15 | [embedded-specific.md](../embedded_concepts/embedded-specific.md) | Ring buffers, watchdog use, fixed-point arithmetic, weak symbols, noinit sections, atomics |
+| 16 | [embedded concepts index](../embedded_concepts/README.md) | Central index for boot process, endianness, memory map, registers, and linker script notes |

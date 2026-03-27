@@ -83,34 +83,13 @@ In a standalone statement (`i++;` vs `++i;`), they're identical. For iterators/p
 
 ### Q: What is volatile and when do you use it?
 
-**Answer:** `volatile` tells the compiler that a variable's value can change at any time outside the program's normal flow. The compiler must:
-- Re-read the variable from memory on every access (no caching in register)
-- Not reorder, combine, or remove reads/writes
-
-**Use it for:**
-1. Hardware registers (memory-mapped I/O)
-2. Variables modified in ISRs and read in the main loop
-3. Variables modified by DMA
-4. Shared variables in multi-threaded code (though volatile alone is not sufficient for thread safety)
-
-**Not sufficient for:** atomicity (need disable interrupts or atomic types), memory barriers (need `__DMB()`/`__DSB()` on multi-core).
+**Answer:** `volatile` tells the compiler that a value can change outside normal program flow, so accesses must not be optimized away or cached incorrectly. Use it for hardware registers, ISR-shared flags, and DMA-visible variables, but do not confuse it with atomicity or thread safety. For the full explanation and edge cases, see [const-volatile.md](../../embedded_concepts/const-volatile.md).
 
 ---
 
 ### Q: Explain the boot process of an ARM Cortex-M microcontroller.
 
-**Answer:**
-
-1. **Power-on / Reset** — CPU fetches initial stack pointer from address `0x00000000`
-2. **Reset vector** — CPU loads the reset handler address from `0x00000004` and jumps to it
-3. **Startup code** — typically written in assembly or provided by the vendor:
-   - Copies `.data` section from Flash to RAM
-   - Zeros the `.bss` section
-   - Initializes the C runtime (sets up static constructors in C++)
-4. **System init** — configures clocks (PLL, prescalers), disables watchdog temporarily
-5. **`main()`** — application code begins
-
-The vector table at address 0 contains: initial SP, then handler addresses for Reset, NMI, HardFault, and all peripheral interrupts.
+**Answer:** On reset, Cortex-M loads the initial stack pointer, jumps through the reset vector, runs startup code to copy `.data` and clear `.bss`, performs low-level system initialization, and only then enters `main()`. The vector table at address 0 provides the initial SP and exception/interrupt entry points. For the full sequence and bootloader context, see [boot-process.md](../../embedded_concepts/boot-process.md).
 
 ---
 
@@ -160,24 +139,7 @@ The vector table at address 0 contains: initial SP, then handler addresses for R
 
 ### Q: Explain DMA and when you would use it.
 
-**Answer:** DMA (Direct Memory Access) transfers data between memory and peripherals without CPU intervention.
-
-**How it works:**
-1. CPU configures DMA: source address, destination address, transfer count, data width
-2. DMA controller performs transfers triggered by peripheral requests or software
-3. DMA signals completion via interrupt
-4. CPU is free to execute code during the transfer
-
-**Use DMA for:**
-- High-throughput ADC sampling (continuous conversion to buffer)
-- UART/SPI bulk transfers
-- Memory-to-memory copies (faster than `memcpy` on some architectures)
-- Audio streaming, display framebuffer updates
-
-**Pitfalls:**
-- Cache coherence on Cortex-M7 (clean/invalidate D-cache)
-- Peripheral and DMA must agree on data width
-- DMA stream/channel assignment is fixed per peripheral on many MCUs
+**Answer:** DMA transfers data between memory and peripherals without CPU intervention after setup. Use it for high-throughput or repetitive transfers such as ADC buffers, UART/SPI bulk transfers, and streaming I/O. The main pitfalls are coherency, data width mismatch, and buffer ownership. For the full flow and tradeoffs, see [dma.md](../../embedded_concepts/dma.md).
 
 ---
 
